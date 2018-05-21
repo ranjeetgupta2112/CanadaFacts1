@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0434FCCC20B1C8C8008498CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCCB20B1C8C8008498CF /* AppDelegate.m */; };
-		0434FCCF20B1C8C8008498CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCCE20B1C8C8008498CF /* ViewController.m */; };
-		0434FCD220B1C8C9008498CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD020B1C8C9008498CF /* Main.storyboard */; };
 		0434FCD420B1C8FD008498CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD320B1C8FD008498CF /* Assets.xcassets */; };
 		0434FCD720B1C8FD008498CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */; };
 		0434FCDA20B1C8FD008498CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCD920B1C8FD008498CF /* main.m */; };
 		0434FCE420B1C8FF008498CF /* CanadaFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCE320B1C8FF008498CF /* CanadaFactsTests.m */; };
 		0434FCEF20B1C8FF008498CF /* CanadaFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */; };
+		04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55920B2B86D001947D8 /* FactsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,6 @@
 		0434FCC720B1C8C7008498CF /* CanadaFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434FCCA20B1C8C8008498CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0434FCCB20B1C8C8008498CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0434FCCD20B1C8C8008498CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0434FCCE20B1C8C8008498CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0434FCD120B1C8C9008498CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0434FCD320B1C8FD008498CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0434FCD620B1C8FD008498CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0434FCD820B1C8FD008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		0434FCEA20B1C8FF008498CF /* CanadaFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsUITests.m; sourceTree = "<group>"; };
 		0434FCF020B1C8FF008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DFE55820B2B86D001947D8 /* FactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsViewController.h; sourceTree = "<group>"; };
+		04DFE55920B2B86D001947D8 /* FactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +101,12 @@
 			children = (
 				0434FCCA20B1C8C8008498CF /* AppDelegate.h */,
 				0434FCCB20B1C8C8008498CF /* AppDelegate.m */,
-				0434FCCD20B1C8C8008498CF /* ViewController.h */,
-				0434FCCE20B1C8C8008498CF /* ViewController.m */,
-				0434FCD020B1C8C9008498CF /* Main.storyboard */,
 				0434FCD320B1C8FD008498CF /* Assets.xcassets */,
 				0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */,
 				0434FCD820B1C8FD008498CF /* Info.plist */,
 				0434FCD920B1C8FD008498CF /* main.m */,
+				04DFE55820B2B86D001947D8 /* FactsViewController.h */,
+				04DFE55920B2B86D001947D8 /* FactsViewController.m */,
 			);
 			path = CanadaFacts;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 			files = (
 				0434FCD720B1C8FD008498CF /* LaunchScreen.storyboard in Resources */,
 				0434FCD420B1C8FD008498CF /* Assets.xcassets in Resources */,
-				0434FCD220B1C8C9008498CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0434FCCF20B1C8C8008498CF /* ViewController.m in Sources */,
+				04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */,
 				0434FCDA20B1C8FD008498CF /* main.m in Sources */,
 				0434FCCC20B1C8C8008498CF /* AppDelegate.m in Sources */,
 			);
@@ -300,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0434FCD020B1C8C9008498CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0434FCD120B1C8C9008498CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
