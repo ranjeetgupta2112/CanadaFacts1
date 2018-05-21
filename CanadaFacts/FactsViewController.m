@@ -7,6 +7,7 @@
 //
 
 #import "FactsViewController.h"
+#import "FactsViewCell.h"
 
 @interface FactsViewController ()
 
@@ -46,9 +47,12 @@
 // the cell will be returned to the tableView
 - (UITableViewCell *)tableView:(UITableView *)theTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    static NSString *cellIdentifier = @"FactCellIdentifier";
+    FactsViewCell *cell = (FactsViewCell *)[theTableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[FactsViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     return cell;
-    
 }
 
 /*
