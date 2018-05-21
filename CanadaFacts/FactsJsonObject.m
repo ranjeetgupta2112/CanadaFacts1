@@ -11,42 +11,34 @@
 @implementation FactsJsonObject
 @synthesize jsonObject = _jsonObject;
 
-- (void)fetchJsonData{
-    jsonObject = [[NSMutableDictionary alloc]init];
-        NSString *urlAsString = [NSString stringWithFormat:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"];
+-(NSArray *)fetchJsonData{
+    NSArray *jsonArray;
+    NSError* error = nil;
+    NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"] options:NSDataReadingUncached error:&error];
+    if (error) {
+        jsonArray = nil;
+        NSLog(@"%@", [error localizedDescription]);
+    } else {
+        NSString *dataString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+        NSData *encodedData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
         
-        NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
-        NSString *encodedUrlAsString = [urlAsString stringByAddingPercentEncodingWithAllowedCharacters:set];
         
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        //parsing the encoded data to get the Canda Facts data dictionary
+        NSError *jsonError;
+        NSMutableDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:encodedData options:0 error:&jsonError];
         
-        [[session dataTaskWithURL:[NSURL URLWithString:urlAsString]
-                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                    
-                    NSLog(@"RESPONSE RECEIVED: %@",response);//just to check if its working or not
-                    NSLog(@"DATA RECEIVED: %@",data);
-                    
-                    if (!error) {
-                        // Success
-                        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-                            NSError *jsonError;
-                            self.jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-                            
-                            if (jsonError) {
-                                // Error Parsing JSON
-                                NSLog(@"Error Parsing Json%@",error.localizedDescription);
-                            } else {
-                                // Success Parsing JSON
-                                NSLog(@" LOG JSON RESPONCE%@",self.jsonObject);
-                            }
-                        }  else {
-                            //Web server is returning an error
-                        }
-                    } else {
-                        NSLog(@"error : %@", error.description);
-                    }
-                }] resume];
+        if (jsonError) {
+            // Error Parsing JSON
+            jsonArray = nil;
+            NSLog(@"Error Parsing Json%@",error.localizedDescription);
+        } else {
+            // Success Parsing JSON
+            jsonArray = [jsonObject valueForKey:@"rows"];
+        }
+        
+    }
     
+    return jsonArray;
 }
 
 @end

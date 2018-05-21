@@ -11,7 +11,7 @@
 @interface FactsJsonObject : NSObject{
     NSMutableDictionary *jsonObject;
 }
--(void) fetchJsonData;
+-(NSArray *) fetchJsonData;
 @property (nonatomic, strong)NSMutableDictionary *jsonObject;
 
 @end

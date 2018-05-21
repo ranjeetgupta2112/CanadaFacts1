@@ -16,14 +16,17 @@
 
 @implementation FactsViewController
 @synthesize tableView = _tableView;
-@synthesize jsonParsedData = _jsonParsedData;
+@synthesize canadaFactsList = _canadaFactsList;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FactsJsonObject *factsJsonObject = [[FactsJsonObject alloc]init];
-    [factsJsonObject fetchJsonData];
-    jsonParsedData = [factsJsonObject jsonObject];
     // Do any additional setup after loading the view.
+
+    FactsJsonObject *factsJsonObject = [[FactsJsonObject alloc]init];
+    canadaFactsList = [factsJsonObject fetchJsonData];
+    NSLog(@"Canada Facts List: %lu",[canadaFactsList count]);
+
+    
     
     //We craete a tableView and add it to the current viewcontroller...
     tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -46,7 +49,7 @@
 // number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [canadaFactsList count];
 }
 
 // the cell will be returned to the tableView

@@ -10,10 +10,10 @@
 
 @interface FactsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
     UITableView *tableView;
-    NSMutableDictionary *jsonParsedData;
+    NSArray *canadaFactsList;
 }
 @property(strong,nonatomic)UITableView *tableView;
-@property(strong,nonatomic)NSMutableDictionary *jsonParsedData;
+@property(strong,nonatomic)NSArray *canadaFactsList;
 
 
 @end
