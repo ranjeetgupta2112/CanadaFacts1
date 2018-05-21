@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FactsViewController : UIViewController
+@interface FactsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+    UITableView *tableView;
+}
+@property(strong,nonatomic)UITableView *tableView;
 
 @end
