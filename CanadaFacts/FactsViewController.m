@@ -8,6 +8,7 @@
 
 #import "FactsViewController.h"
 #import "FactsViewCell.h"
+#import "FactsJsonObject.h"
 
 @interface FactsViewController ()
 
@@ -15,9 +16,13 @@
 
 @implementation FactsViewController
 @synthesize tableView = _tableView;
+@synthesize jsonParsedData = _jsonParsedData;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FactsJsonObject *factsJsonObject = [[FactsJsonObject alloc]init];
+    [factsJsonObject fetchJsonData];
+    jsonParsedData = [factsJsonObject jsonObject];
     // Do any additional setup after loading the view.
     
     //We craete a tableView and add it to the current viewcontroller...
