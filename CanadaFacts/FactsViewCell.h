@@ -12,7 +12,11 @@
     UILabel *labelTitle;
     UILabel *labelDescription;
     UIImageView *imageFact;
+    UILabel *labelTemp;
+
+    
 }
+@property(nonatomic, strong)UILabel *labelTemp;
 @property(nonatomic, strong)UILabel *labelTitle;
 @property(nonatomic, strong)UILabel *labelDescription;
 @property(nonatomic, strong)UIImageView *imageFact;
