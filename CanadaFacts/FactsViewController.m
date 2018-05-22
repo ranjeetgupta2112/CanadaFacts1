@@ -24,7 +24,7 @@
 
     FactsJsonObject *factsJsonObject = [[FactsJsonObject alloc]init];
     canadaFactsList = [factsJsonObject fetchJsonData];
-    NSLog(@"Canada Facts List: %lu",[canadaFactsList count]);
+
 
     
     
@@ -49,7 +49,7 @@
 // number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section
 {
-    return [canadaFactsList count];
+    return self.canadaFactsList.rows.count;
 }
 
 // the cell will be returned to the tableView

@@ -11,8 +11,8 @@
 @implementation FactsJsonObject
 @synthesize jsonObject = _jsonObject;
 
--(NSArray *)fetchJsonData{
-    NSArray *jsonArray;
+-(FactsDataModel *)fetchJsonData{
+    FactsDataModel *jsonArray;
     NSError* error = nil;
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"] options:NSDataReadingUncached error:&error];
     if (error) {
@@ -25,7 +25,7 @@
         
         //parsing the encoded data to get the Canda Facts data dictionary
         NSError *jsonError;
-        NSMutableDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:encodedData options:0 error:&jsonError];
+        FactsDataModel *jsonObject = [NSJSONSerialization JSONObjectWithData:encodedData options:0 error:&jsonError];
         
         if (jsonError) {
             // Error Parsing JSON

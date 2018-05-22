@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FactsDataModel.h"
 
 @interface FactsJsonObject : NSObject{
     NSMutableDictionary *jsonObject;
 }
--(NSArray *) fetchJsonData;
+- (FactsDataModel *) fetchJsonData;
 @property (nonatomic, strong)NSMutableDictionary *jsonObject;
 
 @end
