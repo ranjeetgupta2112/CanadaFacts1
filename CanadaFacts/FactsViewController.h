@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FactsDataModel.h"
+#import "FactModel.h"
 
 @interface FactsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
     UITableView *tableView;
-    FactsDataModel *canadaFactsList;
+    FactModel *canadaFactsList;
 }
 @property(strong,nonatomic)UITableView *tableView;
-@property(strong,nonatomic)FactsDataModel *canadaFactsList;
-
+@property(strong,nonatomic)FactModel *canadaFactsList;
 
 @end

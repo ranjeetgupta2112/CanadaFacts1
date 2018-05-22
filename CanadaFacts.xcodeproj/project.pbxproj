@@ -13,7 +13,7 @@
 		0434FCDA20B1C8FD008498CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCD920B1C8FD008498CF /* main.m */; };
 		0434FCE420B1C8FF008498CF /* CanadaFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCE320B1C8FF008498CF /* CanadaFactsTests.m */; };
 		0434FCEF20B1C8FF008498CF /* CanadaFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */; };
-		0444AC5A20B458E400D49B75 /* FactsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444AC5920B458E400D49B75 /* FactsDataModel.m */; };
+		0444AC5A20B458E400D49B75 /* FactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444AC5920B458E400D49B75 /* FactModel.m */; };
 		04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55920B2B86D001947D8 /* FactsViewController.m */; };
 		04DFE56020B2C45D001947D8 /* FactsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55F20B2C45D001947D8 /* FactsViewCell.m */; };
 		04DFE56320B2CFAA001947D8 /* FactsJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */; };
@@ -50,8 +50,8 @@
 		0434FCEA20B1C8FF008498CF /* CanadaFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsUITests.m; sourceTree = "<group>"; };
 		0434FCF020B1C8FF008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0444AC5820B458E400D49B75 /* FactsDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsDataModel.h; sourceTree = "<group>"; };
-		0444AC5920B458E400D49B75 /* FactsDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsDataModel.m; sourceTree = "<group>"; };
+		0444AC5820B458E400D49B75 /* FactModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactModel.h; sourceTree = "<group>"; };
+		0444AC5920B458E400D49B75 /* FactModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactModel.m; sourceTree = "<group>"; };
 		04DFE55820B2B86D001947D8 /* FactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsViewController.h; sourceTree = "<group>"; };
 		04DFE55920B2B86D001947D8 /* FactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsViewController.m; sourceTree = "<group>"; };
 		04DFE55E20B2C45D001947D8 /* FactsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsViewCell.h; sourceTree = "<group>"; };
@@ -114,10 +114,10 @@
 				04DFE55920B2B86D001947D8 /* FactsViewController.m */,
 				04DFE55E20B2C45D001947D8 /* FactsViewCell.h */,
 				04DFE55F20B2C45D001947D8 /* FactsViewCell.m */,
+				0444AC5820B458E400D49B75 /* FactModel.h */,
+				0444AC5920B458E400D49B75 /* FactModel.m */,
 				04DFE56120B2CFAA001947D8 /* FactsJsonObject.h */,
 				04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */,
-				0444AC5820B458E400D49B75 /* FactsDataModel.h */,
-				0444AC5920B458E400D49B75 /* FactsDataModel.m */,
 				0434FCD320B1C8FD008498CF /* Assets.xcassets */,
 				0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */,
 				0434FCD820B1C8FD008498CF /* Info.plist */,
@@ -276,7 +276,7 @@
 				04DFE56320B2CFAA001947D8 /* FactsJsonObject.m in Sources */,
 				04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */,
 				0434FCDA20B1C8FD008498CF /* main.m in Sources */,
-				0444AC5A20B458E400D49B75 /* FactsDataModel.m in Sources */,
+				0444AC5A20B458E400D49B75 /* FactModel.m in Sources */,
 				04DFE56020B2C45D001947D8 /* FactsViewCell.m in Sources */,
 				0434FCCC20B1C8C8008498CF /* AppDelegate.m in Sources */,
 			);
