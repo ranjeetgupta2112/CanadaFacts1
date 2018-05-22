@@ -1,25 +1,18 @@
-//
-//  FactsDataModel.m
-//  CanadaFacts
-//
-//  Created by Amal Rajan on 22/05/18.
-//  Copyright © 2018 RanjeetHO. All rights reserved.
-//
+#import "FactModel.h"
 
-#import "FactsDataModel.h"
 // Shorthand for simple blocks
 #define λ(decl, expr) (^(decl) { return (expr); })
 
 // nil → NSNull conversion for JSON dictionaries
-//static id NSNullify(id _Nullable x) {
-//    return (x == nil || x == NSNull.null) ? NSNull.null : x;
-//}
+static id NSNullify(id _Nullable x) {
+    return (x == nil || x == NSNull.null) ? NSNull.null : x;
+}
 
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Private model interfaces
 
-@interface FactsDataModel (JSONConversion)
+@interface FactModel (JSONConversion)
 + (instancetype)fromJSONDictionary:(NSDictionary *)dict;
 - (NSDictionary *)JSONDictionary;
 @end
@@ -28,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)fromJSONDictionary:(NSDictionary *)dict;
 - (NSDictionary *)JSONDictionary;
 @end
+
+
 
 static id map(id collection, id (^f)(id value)) {
     id result = nil;
@@ -43,23 +38,23 @@ static id map(id collection, id (^f)(id value)) {
 
 #pragma mark - JSON serialization
 
-FactsDataModel *_Nullable FactWelcomeFromData(NSData *data, NSError **error)
+FactModel *_Nullable FactWelcomeFromData(NSData *data, NSError **error)
 {
     @try {
         id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:error];
-        return *error ? nil : [FactsDataModel fromJSONDictionary:json];
+        return *error ? nil : [FactModel fromJSONDictionary:json];
     } @catch (NSException *exception) {
         *error = [NSError errorWithDomain:@"JSONSerialization" code:-1 userInfo:@{ @"exception": exception }];
         return nil;
     }
 }
 
-FactsDataModel *_Nullable FactWelcomeFromJSON(NSString *json, NSStringEncoding encoding, NSError **error)
+FactModel *_Nullable FactWelcomeFromJSON(NSString *json, NSStringEncoding encoding, NSError **error)
 {
     return FactWelcomeFromData([json dataUsingEncoding:encoding], error);
 }
 
-NSData *_Nullable FactWelcomeToData(FactsDataModel *welcome, NSError **error)
+NSData *_Nullable FactWelcomeToData(FactModel *welcome, NSError **error)
 {
     @try {
         id json = [welcome JSONDictionary];
@@ -71,16 +66,13 @@ NSData *_Nullable FactWelcomeToData(FactsDataModel *welcome, NSError **error)
     }
 }
 
-NSString *_Nullable FactWelcomeToJSON(FactsDataModel *welcome, NSStringEncoding encoding, NSError **error)
+NSString *_Nullable FactWelcomeToJSON(FactModel *welcome, NSStringEncoding encoding, NSError **error)
 {
     NSData *data = FactWelcomeToData(welcome, error);
     return data ? [[NSString alloc] initWithData:data encoding:encoding] : nil;
 }
 
-@implementation FactsDataModel
-
-
-
+@implementation FactModel
 + (NSDictionary<NSString *, NSString *> *)properties
 {
     static NSDictionary<NSString *, NSString *> *properties;
@@ -102,7 +94,7 @@ NSString *_Nullable FactWelcomeToJSON(FactsDataModel *welcome, NSStringEncoding 
 
 + (instancetype)fromJSONDictionary:(NSDictionary *)dict
 {
-    return dict ? [[FactsDataModel alloc] initWithJSONDictionary:dict] : nil;
+    return dict ? [[FactModel alloc] initWithJSONDictionary:dict] : nil;
 }
 
 - (instancetype)initWithJSONDictionary:(NSDictionary *)dict
@@ -116,7 +108,7 @@ NSString *_Nullable FactWelcomeToJSON(FactsDataModel *welcome, NSStringEncoding 
 
 - (NSDictionary *)JSONDictionary
 {
-    id dict = [[self dictionaryWithValuesForKeys:FactsDataModel.properties.allValues] mutableCopy];
+    id dict = [[self dictionaryWithValuesForKeys:FactModel.properties.allValues] mutableCopy];
     
     // Map values that need translation
     [dict addEntriesFromDictionary:@{
@@ -185,5 +177,3 @@ NSString *_Nullable FactWelcomeToJSON(FactsDataModel *welcome, NSStringEncoding 
 @end
 
 NS_ASSUME_NONNULL_END
-
-

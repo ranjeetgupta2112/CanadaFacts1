@@ -1,20 +1,18 @@
+// To parse this JSON:
 //
-//  FactsDataModel.h
-//  CanadaFacts
-//
-//  Created by Amal Rajan on 22/05/18.
-//  Copyright © 2018 RanjeetHO. All rights reserved.
-//
+//   NSError *error;
+//   FactWelcome *welcome = [FactWelcome fromJSON:json encoding:NSUTF8Encoding error:&error];
 
 #import <Foundation/Foundation.h>
+
 @class FactModel;
 @class FactRow;
 
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Object interfaces
-@interface FactsDataModel : NSObject
 
+@interface FactModel : NSObject
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSArray<FactRow *> *rows;
 
@@ -22,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (_Nullable instancetype)fromData:(NSData *)data error:(NSError *_Nullable *)error;
 - (NSString *_Nullable)toJSON:(NSStringEncoding)encoding error:(NSError *_Nullable *)error;
 - (NSData *_Nullable)toData:(NSError *_Nullable *)error;
-
 @end
 
 @interface FactRow : NSObject
@@ -32,3 +29,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
