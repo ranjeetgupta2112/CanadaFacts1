@@ -27,15 +27,16 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
+    
     [tableView .refreshControl addTarget:self.tableView action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
 
     // adding tableView to canvas
     [self.view addSubview:tableView];
     
-    FactsJsonObject *service = [[FactsJsonObject alloc] init];
+    FactsJsonObject *jsonObject = [[FactsJsonObject alloc] init];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
         //Background Thread
-        self.canadaFactsList =  [service fetchJsonData];
+        self.canadaFactsList =  [jsonObject fetchJsonData];
         dispatch_async(dispatch_get_main_queue(), ^(void){
             //Run UI Updates
             [self.tableView reloadData];
@@ -101,6 +102,14 @@
 }
 
 #pragma mark - UITableViewDataSource
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *tableTitle;
+    tableTitle = [self.canadaFactsList valueForKey:@"title"];
+    return tableTitle;
+}
+
+
 // number of section(s), now I assume there is only 1 section
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView
 {
