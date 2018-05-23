@@ -35,7 +35,7 @@
     
     FactsJsonObject *jsonObject = [[FactsJsonObject alloc] init];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-        //Background Thread
+        //Processing must take place in Background Thread
         self.canadaFactsList =  [jsonObject fetchJsonData];
         dispatch_async(dispatch_get_main_queue(), ^(void){
             //Run UI Updates
@@ -49,7 +49,6 @@
     
     UIRefreshControl *factsRefreshControl = [[UIRefreshControl alloc]init];
     tableView.refreshControl = factsRefreshControl;
-    [tableView.refreshControl endRefreshing];
     [tableView .refreshControl addTarget:self action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
 }
 
@@ -102,6 +101,7 @@
 }
 
 #pragma mark - UITableViewDataSource
+
 - (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     NSString *tableTitle;
