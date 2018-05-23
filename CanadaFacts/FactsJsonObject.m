@@ -14,6 +14,7 @@
 -(FactModel *)fetchJsonData{
     FactModel *jsonObject = nil;
     NSError* error = nil;
+    
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"] options:NSDataReadingUncached error:&error];
     if (error) {
         NSLog(@"%@", [error localizedDescription]);

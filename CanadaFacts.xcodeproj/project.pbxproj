@@ -18,6 +18,9 @@
 		04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55920B2B86D001947D8 /* FactsViewController.m */; };
 		04DFE56020B2C45D001947D8 /* FactsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55F20B2C45D001947D8 /* FactsViewCell.m */; };
 		04DFE56320B2CFAA001947D8 /* FactsJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */; };
+		04EC9EA420B5A7E1008810FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC9EA220B5A7E0008810FB /* Reachability.m */; };
+		04EC9EAC20B5A88B008810FB /* CanadaFactsInternetRechability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC9EAB20B5A88B008810FB /* CanadaFactsInternetRechability.m */; };
+		04EC9EB520B5A97E008810FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EC9EB420B5A97E008810FB /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,13 @@
 			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
 			remoteInfo = CanadaFacts;
 		};
+		04EC9EAE20B5A88B008810FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0434FCBF20B1C8C5008498CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
+			remoteInfo = CanadaFacts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +103,12 @@
 		04DFE55F20B2C45D001947D8 /* FactsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsViewCell.m; sourceTree = "<group>"; };
 		04DFE56120B2CFAA001947D8 /* FactsJsonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsJsonObject.h; sourceTree = "<group>"; };
 		04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsJsonObject.m; sourceTree = "<group>"; };
+		04EC9EA220B5A7E0008810FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		04EC9EA320B5A7E0008810FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		04EC9EA920B5A88B008810FB /* CanadaFactsInternetRechability.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsInternetRechability.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EC9EAB20B5A88B008810FB /* CanadaFactsInternetRechability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsInternetRechability.m; sourceTree = "<group>"; };
+		04EC9EAD20B5A88B008810FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EC9EB420B5A97E008810FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EC9EB520B5A97E008810FB /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +162,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04EC9EA620B5A88B008810FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -155,7 +179,9 @@
 				0499554820B4C45E0057DE86 /* CanadaFactsWebServiceTest */,
 				04ACEEB120B5443900DA0488 /* CanadaFactsPerformanceTests */,
 				04ACEEBF20B544E300DA0488 /* CanadaFactsCellTest */,
+				04EC9EAA20B5A88B008810FB /* CanadaFactsInternetRechability */,
 				0434FCC820B1C8C7008498CF /* Products */,
+				04EC9EB320B5A97D008810FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +195,7 @@
 				04ACEEA220B53EA900DA0488 /* CanadaFactsCellsTest.xctest */,
 				04ACEEB020B5443900DA0488 /* CanadaFactsPerformanceTests.xctest */,
 				04ACEEBE20B544E300DA0488 /* CanadaFactsCellTest.xctest */,
+				04EC9EA920B5A88B008810FB /* CanadaFactsInternetRechability.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +213,8 @@
 				0444AC5920B458E400D49B75 /* FactModel.m */,
 				04DFE56120B2CFAA001947D8 /* FactsJsonObject.h */,
 				04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */,
+				04EC9EA320B5A7E0008810FB /* Reachability.h */,
+				04EC9EA220B5A7E0008810FB /* Reachability.m */,
 				0434FCD320B1C8FD008498CF /* Assets.xcassets */,
 				0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */,
 				0434FCD820B1C8FD008498CF /* Info.plist */,
@@ -219,6 +248,23 @@
 				04ACEEC220B544E300DA0488 /* Info.plist */,
 			);
 			path = CanadaFactsCellTest;
+			sourceTree = "<group>";
+		};
+		04EC9EAA20B5A88B008810FB /* CanadaFactsInternetRechability */ = {
+			isa = PBXGroup;
+			children = (
+				04EC9EAB20B5A88B008810FB /* CanadaFactsInternetRechability.m */,
+				04EC9EAD20B5A88B008810FB /* Info.plist */,
+			);
+			path = CanadaFactsInternetRechability;
+			sourceTree = "<group>";
+		};
+		04EC9EB320B5A97D008810FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EC9EB420B5A97E008810FB /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +395,24 @@
 			productReference = 04ACEEBE20B544E300DA0488 /* CanadaFactsCellTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		04EC9EA820B5A88B008810FB /* CanadaFactsInternetRechability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EC9EB020B5A88B008810FB /* Build configuration list for PBXNativeTarget "CanadaFactsInternetRechability" */;
+			buildPhases = (
+				04EC9EA520B5A88B008810FB /* Sources */,
+				04EC9EA620B5A88B008810FB /* Frameworks */,
+				04EC9EA720B5A88B008810FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EC9EAF20B5A88B008810FB /* PBXTargetDependency */,
+			);
+			name = CanadaFactsInternetRechability;
+			productName = CanadaFactsInternetRechability;
+			productReference = 04EC9EA920B5A88B008810FB /* CanadaFactsInternetRechability.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,6 +449,10 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 0434FCC620B1C8C6008498CF;
 					};
+					04EC9EA820B5A88B008810FB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0434FCC620B1C8C6008498CF;
+					};
 				};
 			};
 			buildConfigurationList = 0434FCC220B1C8C5008498CF /* Build configuration list for PBXProject "CanadaFacts" */;
@@ -407,6 +475,7 @@
 				04ACEEA120B53EA900DA0488 /* CanadaFactsCellsTest */,
 				04ACEEAF20B5443900DA0488 /* CanadaFactsPerformanceTests */,
 				04ACEEBD20B544E300DA0488 /* CanadaFactsCellTest */,
+				04EC9EA820B5A88B008810FB /* CanadaFactsInternetRechability */,
 			);
 		};
 /* End PBXProject section */
@@ -463,6 +532,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04EC9EA720B5A88B008810FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -473,6 +549,7 @@
 				04DFE56320B2CFAA001947D8 /* FactsJsonObject.m in Sources */,
 				04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */,
 				0434FCDA20B1C8FD008498CF /* main.m in Sources */,
+				04EC9EA420B5A7E1008810FB /* Reachability.m in Sources */,
 				0444AC5A20B458E400D49B75 /* FactModel.m in Sources */,
 				04DFE56020B2C45D001947D8 /* FactsViewCell.m in Sources */,
 				0434FCCC20B1C8C8008498CF /* AppDelegate.m in Sources */,
@@ -524,6 +601,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04EC9EA520B5A88B008810FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EC9EAC20B5A88B008810FB /* CanadaFactsInternetRechability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -556,6 +641,11 @@
 			isa = PBXTargetDependency;
 			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
 			targetProxy = 04ACEEC320B544E300DA0488 /* PBXContainerItemProxy */;
+		};
+		04EC9EAF20B5A88B008810FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
+			targetProxy = 04EC9EAE20B5A88B008810FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -927,6 +1017,42 @@
 			};
 			name = Release;
 		};
+		04EC9EB120B5A88B008810FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsInternetRechability/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsInternetRechability;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Debug;
+		};
+		04EC9EB220B5A88B008810FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsInternetRechability/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsInternetRechability;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -998,6 +1124,15 @@
 			buildConfigurations = (
 				04ACEEC620B544E300DA0488 /* Debug */,
 				04ACEEC720B544E300DA0488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EC9EB020B5A88B008810FB /* Build configuration list for PBXNativeTarget "CanadaFactsInternetRechability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EC9EB120B5A88B008810FB /* Debug */,
+				04EC9EB220B5A88B008810FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

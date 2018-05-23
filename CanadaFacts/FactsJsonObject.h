@@ -10,6 +10,7 @@
 #import "FactModel.h"
 
 
+
 @interface FactsJsonObject : NSObject
 - (FactModel *) fetchJsonData;
 
