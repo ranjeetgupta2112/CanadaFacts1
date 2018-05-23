@@ -3,7 +3,7 @@
 //  Facts
 //
 //  Created by Amal Rajan on 5/20/18.
-//  Copyright © 2018 Amal Rajan. All rights reserved.
+//  Copyright © 2018 RanjeetHO. All rights reserved.
 //
 
 #import "FactsViewController.h"
@@ -21,15 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view, typically from a nib.
-    
     tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     // must set delegate & dataSource, otherwise the the table will be empty and not responsive
     tableView.delegate = self;
     tableView.dataSource = self;
     
+    [tableView .refreshControl addTarget:self.tableView action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
+
     // adding tableView to canvas
     [self.view addSubview:tableView];
     
@@ -46,6 +45,11 @@
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self setConstraintsForTableView];
+    
+    UIRefreshControl *factsRefreshControl = [[UIRefreshControl alloc]init];
+    tableView.refreshControl = factsRefreshControl;
+    [tableView.refreshControl endRefreshing];
+    [tableView .refreshControl addTarget:self action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
 }
 
 -(void) setConstraintsForTableView{
@@ -87,6 +91,13 @@
     [self.view  addConstraint:top];
     [self.view  addConstraint:leading];
 
+}
+
+-(void)refreshTableView{
+    if(tableView.refreshControl){
+        [tableView reloadData];
+        [tableView.refreshControl endRefreshing];
+    }
 }
 
 #pragma mark - UITableViewDataSource

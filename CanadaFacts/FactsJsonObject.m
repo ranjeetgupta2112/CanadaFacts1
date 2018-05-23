@@ -1,8 +1,8 @@
 //
-//  FactsJsonObject.m
-//  CanadaFacts
+//  Services.m
+//  Facts
 //
-//  Created by Amal Rajan on 21/05/18.
+//  Created by Amal Rajan on 5/20/18.
 //  Copyright © 2018 RanjeetHO. All rights reserved.
 //
 
@@ -25,7 +25,6 @@
         //parsing the encoded data to get the Canda Facts data dictionary
         NSError *jsonError;
         jsonObject = [FactModel fromData:encodedData error:&jsonError];
-        NSLog(@"JSOn Object %@",jsonObject);
         
         if (jsonError) {
             // Error Parsing JSON
