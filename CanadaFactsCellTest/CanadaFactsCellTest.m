@@ -1,18 +1,19 @@
 //
-//  CanadaFactsTests.m
-//  CanadaFactsTests
+//  CanadaFactsCellTest.m
+//  CanadaFactsCellTest
 //
-//  Created by Amal Rajan on 20/05/18.
+//  Created by Amal Rajan on 23/05/18.
 //  Copyright © 2018 RanjeetHO. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "FactsViewCell.h"
 
-@interface CanadaFactsTests : XCTestCase
+@interface CanadaFactsCellTest : XCTestCase
 
 @end
 
-@implementation CanadaFactsTests
+@implementation CanadaFactsCellTest
 
 - (void)setUp {
     [super setUp];
@@ -24,9 +25,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testCellElements {
+    FactsViewCell *cell = [[FactsViewCell alloc]init];
+    //to check if all cell elemts are available or not
+    XCTAssert(cell.imageFact != nil);
+    XCTAssert(cell.labelDescription != nil);
+    XCTAssert(cell.labelTitle != nil);
+    
 }
 
 - (void)testPerformanceExample {

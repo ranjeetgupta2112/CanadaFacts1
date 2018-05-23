@@ -11,9 +11,10 @@
 		0434FCD420B1C8FD008498CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD320B1C8FD008498CF /* Assets.xcassets */; };
 		0434FCD720B1C8FD008498CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */; };
 		0434FCDA20B1C8FD008498CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCD920B1C8FD008498CF /* main.m */; };
-		0434FCE420B1C8FF008498CF /* CanadaFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCE320B1C8FF008498CF /* CanadaFactsTests.m */; };
-		0434FCEF20B1C8FF008498CF /* CanadaFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */; };
 		0444AC5A20B458E400D49B75 /* FactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444AC5920B458E400D49B75 /* FactModel.m */; };
+		0499554A20B4C45E0057DE86 /* CanadaFactsWebServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499554920B4C45E0057DE86 /* CanadaFactsWebServiceTest.m */; };
+		04ACEEB320B5443900DA0488 /* CanadaFactsPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACEEB220B5443900DA0488 /* CanadaFactsPerformanceTests.m */; };
+		04ACEEC120B544E300DA0488 /* CanadaFactsCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACEEC020B544E300DA0488 /* CanadaFactsCellTest.m */; };
 		04DFE55A20B2B86D001947D8 /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55920B2B86D001947D8 /* FactsViewController.m */; };
 		04DFE56020B2C45D001947D8 /* FactsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE55F20B2C45D001947D8 /* FactsViewCell.m */; };
 		04DFE56320B2CFAA001947D8 /* FactsJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DFE56220B2CFAA001947D8 /* FactsJsonObject.m */; };
@@ -34,6 +35,34 @@
 			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
 			remoteInfo = CanadaFacts;
 		};
+		0499554C20B4C45E0057DE86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0434FCBF20B1C8C5008498CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
+			remoteInfo = CanadaFacts;
+		};
+		04ACEEA720B53EAA00DA0488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0434FCBF20B1C8C5008498CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
+			remoteInfo = CanadaFacts;
+		};
+		04ACEEB520B5443900DA0488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0434FCBF20B1C8C5008498CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
+			remoteInfo = CanadaFacts;
+		};
+		04ACEEC320B544E300DA0488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0434FCBF20B1C8C5008498CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0434FCC620B1C8C6008498CF;
+			remoteInfo = CanadaFacts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -45,13 +74,19 @@
 		0434FCD820B1C8FD008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0434FCD920B1C8FD008498CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0434FCDF20B1C8FF008498CF /* CanadaFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0434FCE320B1C8FF008498CF /* CanadaFactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsTests.m; sourceTree = "<group>"; };
-		0434FCE520B1C8FF008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0434FCEA20B1C8FF008498CF /* CanadaFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsUITests.m; sourceTree = "<group>"; };
-		0434FCF020B1C8FF008498CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0444AC5820B458E400D49B75 /* FactModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactModel.h; sourceTree = "<group>"; };
 		0444AC5920B458E400D49B75 /* FactModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactModel.m; sourceTree = "<group>"; };
+		0499554720B4C45E0057DE86 /* CanadaFactsWebServiceTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsWebServiceTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499554920B4C45E0057DE86 /* CanadaFactsWebServiceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsWebServiceTest.m; sourceTree = "<group>"; };
+		0499554B20B4C45E0057DE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ACEEA220B53EA900DA0488 /* CanadaFactsCellsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsCellsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ACEEB020B5443900DA0488 /* CanadaFactsPerformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsPerformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ACEEB220B5443900DA0488 /* CanadaFactsPerformanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsPerformanceTests.m; sourceTree = "<group>"; };
+		04ACEEB420B5443900DA0488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ACEEBE20B544E300DA0488 /* CanadaFactsCellTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsCellTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ACEEC020B544E300DA0488 /* CanadaFactsCellTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsCellTest.m; sourceTree = "<group>"; };
+		04ACEEC220B544E300DA0488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DFE55820B2B86D001947D8 /* FactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsViewController.h; sourceTree = "<group>"; };
 		04DFE55920B2B86D001947D8 /* FactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsViewController.m; sourceTree = "<group>"; };
 		04DFE55E20B2C45D001947D8 /* FactsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactsViewCell.h; sourceTree = "<group>"; };
@@ -82,6 +117,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0499554420B4C45E0057DE86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEE9F20B53EA900DA0488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEAD20B5443900DA0488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEBB20B544E300DA0488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,8 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				0434FCC920B1C8C7008498CF /* CanadaFacts */,
-				0434FCE220B1C8FF008498CF /* CanadaFactsTests */,
-				0434FCED20B1C8FF008498CF /* CanadaFactsUITests */,
+				0499554820B4C45E0057DE86 /* CanadaFactsWebServiceTest */,
+				04ACEEB120B5443900DA0488 /* CanadaFactsPerformanceTests */,
+				04ACEEBF20B544E300DA0488 /* CanadaFactsCellTest */,
 				0434FCC820B1C8C7008498CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +165,10 @@
 				0434FCC720B1C8C7008498CF /* CanadaFacts.app */,
 				0434FCDF20B1C8FF008498CF /* CanadaFactsTests.xctest */,
 				0434FCEA20B1C8FF008498CF /* CanadaFactsUITests.xctest */,
+				0499554720B4C45E0057DE86 /* CanadaFactsWebServiceTest.xctest */,
+				04ACEEA220B53EA900DA0488 /* CanadaFactsCellsTest.xctest */,
+				04ACEEB020B5443900DA0488 /* CanadaFactsPerformanceTests.xctest */,
+				04ACEEBE20B544E300DA0488 /* CanadaFactsCellTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,22 +194,31 @@
 			path = CanadaFacts;
 			sourceTree = "<group>";
 		};
-		0434FCE220B1C8FF008498CF /* CanadaFactsTests */ = {
+		0499554820B4C45E0057DE86 /* CanadaFactsWebServiceTest */ = {
 			isa = PBXGroup;
 			children = (
-				0434FCE320B1C8FF008498CF /* CanadaFactsTests.m */,
-				0434FCE520B1C8FF008498CF /* Info.plist */,
+				0499554920B4C45E0057DE86 /* CanadaFactsWebServiceTest.m */,
+				0499554B20B4C45E0057DE86 /* Info.plist */,
 			);
-			path = CanadaFactsTests;
+			path = CanadaFactsWebServiceTest;
 			sourceTree = "<group>";
 		};
-		0434FCED20B1C8FF008498CF /* CanadaFactsUITests */ = {
+		04ACEEB120B5443900DA0488 /* CanadaFactsPerformanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				0434FCEE20B1C8FF008498CF /* CanadaFactsUITests.m */,
-				0434FCF020B1C8FF008498CF /* Info.plist */,
+				04ACEEB220B5443900DA0488 /* CanadaFactsPerformanceTests.m */,
+				04ACEEB420B5443900DA0488 /* Info.plist */,
 			);
-			path = CanadaFactsUITests;
+			path = CanadaFactsPerformanceTests;
+			sourceTree = "<group>";
+		};
+		04ACEEBF20B544E300DA0488 /* CanadaFactsCellTest */ = {
+			isa = PBXGroup;
+			children = (
+				04ACEEC020B544E300DA0488 /* CanadaFactsCellTest.m */,
+				04ACEEC220B544E300DA0488 /* Info.plist */,
+			);
+			path = CanadaFactsCellTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +277,78 @@
 			productReference = 0434FCEA20B1C8FF008498CF /* CanadaFactsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0499554620B4C45E0057DE86 /* CanadaFactsWebServiceTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0499555020B4C45F0057DE86 /* Build configuration list for PBXNativeTarget "CanadaFactsWebServiceTest" */;
+			buildPhases = (
+				0499554320B4C45E0057DE86 /* Sources */,
+				0499554420B4C45E0057DE86 /* Frameworks */,
+				0499554520B4C45E0057DE86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0499554D20B4C45E0057DE86 /* PBXTargetDependency */,
+			);
+			name = CanadaFactsWebServiceTest;
+			productName = CanadaFactsWebServiceTest;
+			productReference = 0499554720B4C45E0057DE86 /* CanadaFactsWebServiceTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04ACEEA120B53EA900DA0488 /* CanadaFactsCellsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ACEEAB20B53EAA00DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsCellsTest" */;
+			buildPhases = (
+				04ACEE9E20B53EA900DA0488 /* Sources */,
+				04ACEE9F20B53EA900DA0488 /* Frameworks */,
+				04ACEEA020B53EA900DA0488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04ACEEA820B53EAA00DA0488 /* PBXTargetDependency */,
+			);
+			name = CanadaFactsCellsTest;
+			productName = CanadaFactsCellsTest;
+			productReference = 04ACEEA220B53EA900DA0488 /* CanadaFactsCellsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04ACEEAF20B5443900DA0488 /* CanadaFactsPerformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ACEEB720B5443900DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsPerformanceTests" */;
+			buildPhases = (
+				04ACEEAC20B5443900DA0488 /* Sources */,
+				04ACEEAD20B5443900DA0488 /* Frameworks */,
+				04ACEEAE20B5443900DA0488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04ACEEB620B5443900DA0488 /* PBXTargetDependency */,
+			);
+			name = CanadaFactsPerformanceTests;
+			productName = CanadaFactsPerformanceTests;
+			productReference = 04ACEEB020B5443900DA0488 /* CanadaFactsPerformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04ACEEBD20B544E300DA0488 /* CanadaFactsCellTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ACEEC520B544E300DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsCellTest" */;
+			buildPhases = (
+				04ACEEBA20B544E300DA0488 /* Sources */,
+				04ACEEBB20B544E300DA0488 /* Frameworks */,
+				04ACEEBC20B544E300DA0488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04ACEEC420B544E300DA0488 /* PBXTargetDependency */,
+			);
+			name = CanadaFactsCellTest;
+			productName = CanadaFactsCellTest;
+			productReference = 04ACEEBE20B544E300DA0488 /* CanadaFactsCellTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +366,22 @@
 						TestTargetID = 0434FCC620B1C8C6008498CF;
 					};
 					0434FCE920B1C8FF008498CF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0434FCC620B1C8C6008498CF;
+					};
+					0499554620B4C45E0057DE86 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0434FCC620B1C8C6008498CF;
+					};
+					04ACEEA120B53EA900DA0488 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0434FCC620B1C8C6008498CF;
+					};
+					04ACEEAF20B5443900DA0488 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0434FCC620B1C8C6008498CF;
+					};
+					04ACEEBD20B544E300DA0488 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 0434FCC620B1C8C6008498CF;
 					};
@@ -238,6 +403,10 @@
 				0434FCC620B1C8C6008498CF /* CanadaFacts */,
 				0434FCDE20B1C8FF008498CF /* CanadaFactsTests */,
 				0434FCE920B1C8FF008498CF /* CanadaFactsUITests */,
+				0499554620B4C45E0057DE86 /* CanadaFactsWebServiceTest */,
+				04ACEEA120B53EA900DA0488 /* CanadaFactsCellsTest */,
+				04ACEEAF20B5443900DA0488 /* CanadaFactsPerformanceTests */,
+				04ACEEBD20B544E300DA0488 /* CanadaFactsCellTest */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +435,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0499554520B4C45E0057DE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEA020B53EA900DA0488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEAE20B5443900DA0488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEBC20B544E300DA0488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0434FCE420B1C8FF008498CF /* CanadaFactsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +490,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0434FCEF20B1C8FF008498CF /* CanadaFactsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0499554320B4C45E0057DE86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0499554A20B4C45E0057DE86 /* CanadaFactsWebServiceTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEE9E20B53EA900DA0488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEAC20B5443900DA0488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ACEEB320B5443900DA0488 /* CanadaFactsPerformanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ACEEBA20B544E300DA0488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ACEEC120B544E300DA0488 /* CanadaFactsCellTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +536,26 @@
 			isa = PBXTargetDependency;
 			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
 			targetProxy = 0434FCEB20B1C8FF008498CF /* PBXContainerItemProxy */;
+		};
+		0499554D20B4C45E0057DE86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
+			targetProxy = 0499554C20B4C45E0057DE86 /* PBXContainerItemProxy */;
+		};
+		04ACEEA820B53EAA00DA0488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
+			targetProxy = 04ACEEA720B53EAA00DA0488 /* PBXContainerItemProxy */;
+		};
+		04ACEEB620B5443900DA0488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
+			targetProxy = 04ACEEB520B5443900DA0488 /* PBXContainerItemProxy */;
+		};
+		04ACEEC420B544E300DA0488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0434FCC620B1C8C6008498CF /* CanadaFacts */;
+			targetProxy = 04ACEEC320B544E300DA0488 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,6 +783,150 @@
 			};
 			name = Release;
 		};
+		0499554E20B4C45E0057DE86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsWebServiceTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsWebServiceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Debug;
+		};
+		0499554F20B4C45E0057DE86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsWebServiceTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsWebServiceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Release;
+		};
+		04ACEEA920B53EAA00DA0488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsCellsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsCellsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Debug;
+		};
+		04ACEEAA20B53EAA00DA0488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsCellsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsCellsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Release;
+		};
+		04ACEEB820B5443900DA0488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Debug;
+		};
+		04ACEEB920B5443900DA0488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsPerformanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsPerformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Release;
+		};
+		04ACEEC620B544E300DA0488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsCellTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsCellTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Debug;
+		};
+		04ACEEC720B544E300DA0488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaFactsCellTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amal.comp.CanadaFactsCellTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaFacts.app/CanadaFacts";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +962,42 @@
 			buildConfigurations = (
 				0434FCFA20B1C8FF008498CF /* Debug */,
 				0434FCFB20B1C8FF008498CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0499555020B4C45F0057DE86 /* Build configuration list for PBXNativeTarget "CanadaFactsWebServiceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0499554E20B4C45E0057DE86 /* Debug */,
+				0499554F20B4C45E0057DE86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ACEEAB20B53EAA00DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsCellsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ACEEA920B53EAA00DA0488 /* Debug */,
+				04ACEEAA20B53EAA00DA0488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ACEEB720B5443900DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsPerformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ACEEB820B5443900DA0488 /* Debug */,
+				04ACEEB920B5443900DA0488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ACEEC520B544E300DA0488 /* Build configuration list for PBXNativeTarget "CanadaFactsCellTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ACEEC620B544E300DA0488 /* Debug */,
+				04ACEEC720B544E300DA0488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
