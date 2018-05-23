@@ -17,6 +17,7 @@
 
 - (void)setUp {
     [super setUp];
+    [self testInternetConnection];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -27,7 +28,7 @@
 
 - (void)testInternetConnection {
     Reachability *reachability = [Reachability reachabilityWithHostname:@"www.google.com"];
-    
+    [reachability startNotifier];
     reachability.reachableBlock = ^(Reachability *reachability) {
         NSLog(@"Network is reachable.");
     };
