@@ -10,30 +10,40 @@
 #import "FactModel.h"
 
 @implementation FactsJsonObject
+@synthesize responceData = _responceData;
+@synthesize delegate;
 
--(FactModel *)fetchJsonData{
-    FactModel *jsonObject = nil;
-    NSError* error = nil;
+- (void)fetchJsonData{
+    self.responceData = [[NSMutableData alloc]init];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"]];
     
-    NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"] options:NSDataReadingUncached error:&error];
-    if (error) {
-        NSLog(@"%@", [error localizedDescription]);
-    } else {
-        NSString *dataString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-        NSData *encodedData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
-        
-        
-        //parsing the encoded data to get the Canda Facts data dictionary
-        NSError *jsonError;
-        jsonObject = [FactModel fromData:encodedData error:&jsonError];
-        
-        if (jsonError) {
-            // Error Parsing JSON
-            NSLog(@"Error Parsing Json%@",error.localizedDescription);
-        }
-    }
+    // Create url connection and fire request
+    NSURLConnection *urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [urlConnection start];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    // Appending the new data to the instance variable you declared
+    [self.responceData appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // We can parse the data to store it in model object.
+    NSLog(@"%@",self.responceData);
+    NSString *dataString = [[NSString alloc] initWithData:self.responceData encoding:NSASCIIStringEncoding];
+    NSData *encodedData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
     
-    return jsonObject;
+    NSError * error = nil;
+    FactModel *factData = [FactModel fromData:encodedData error:&error];
+    [delegate updateFactDataInUI:factData];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!... We would setup an alert to show the user...
+    // Check the error var
+    [delegate serviceFailedWithError:error];
+    
 }
 
 @end

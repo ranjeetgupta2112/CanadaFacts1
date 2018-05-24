@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FactModel.h"
+#import "FactsJsonObject.h"
 
-@interface FactsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>{
+@interface FactsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, FactsJsonObjectDelegate>{
     UITableView *tableView;
     FactModel *canadaFactsList;
 }

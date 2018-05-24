@@ -9,9 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "FactModel.h"
 
+@protocol FactsJsonObjectDelegate
 
+-(void)updateFactDataInUI:(FactModel *)model;
+-(void)serviceFailedWithError:(NSError *)error;
 
-@interface FactsJsonObject : NSObject
-- (FactModel *) fetchJsonData;
+@end
+
+@interface FactsJsonObject : NSObject<NSURLConnectionDelegate>{
+    NSMutableData *responceData;
+}
+-(void)fetchJsonData;
+@property(retain,nonatomic)NSMutableData *responceData;
+@property(weak,nonatomic) id delegate;
+
 
 @end

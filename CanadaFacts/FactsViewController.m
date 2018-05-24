@@ -34,14 +34,8 @@
     [self.view addSubview:tableView];
     
     FactsJsonObject *jsonObject = [[FactsJsonObject alloc] init];
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-        //Processing must take place in Background Thread
-        self.canadaFactsList =  [jsonObject fetchJsonData];
-        dispatch_async(dispatch_get_main_queue(), ^(void){
-            //Run UI Updates
-            [self.tableView reloadData];
-        });
-    });
+    jsonObject.delegate = self;
+    [jsonObject fetchJsonData];
     
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -91,6 +85,18 @@
     [self.view  addConstraint:top];
     [self.view  addConstraint:leading];
 
+}
+
+-(void)updateFactDataInUI:(FactModel *)model {
+    self.canadaFactsList = model;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+    });
+}
+
+-(void)serviceFailedWithError:(NSError *)error{
+    
 }
 
 -(void)refreshTableView{
