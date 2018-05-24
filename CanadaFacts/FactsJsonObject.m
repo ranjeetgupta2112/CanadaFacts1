@@ -16,7 +16,6 @@
 - (void)fetchJsonData{
     self.responceData = [[NSMutableData alloc]init];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"]];
-    
     // Create url connection and fire request
     NSURLConnection *urlConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [urlConnection start];
@@ -30,7 +29,6 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     // The request is complete and data has been received
     // We can parse the data to store it in model object.
-    NSLog(@"%@",self.responceData);
     NSString *dataString = [[NSString alloc] initWithData:self.responceData encoding:NSASCIIStringEncoding];
     NSData *encodedData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
     

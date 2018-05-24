@@ -96,7 +96,8 @@
 }
 
 -(void)serviceFailedWithError:(NSError *)error{
-    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error Fecthing Data" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 -(void)refreshTableView{

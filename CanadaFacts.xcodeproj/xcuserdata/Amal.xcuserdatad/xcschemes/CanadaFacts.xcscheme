@@ -98,6 +98,16 @@
                ReferencedContainer = "container:CanadaFacts.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0433E7DC20B6E5A600ECBD14"
+               BuildableName = "CanadaFactsNetworkMethodCallTests.xctest"
+               BlueprintName = "CanadaFactsNetworkMethodCallTests"
+               ReferencedContainer = "container:CanadaFacts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

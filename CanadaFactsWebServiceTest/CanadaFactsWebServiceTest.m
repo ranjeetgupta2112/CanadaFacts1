@@ -32,7 +32,6 @@
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"] options:NSDataReadingUncached error:&error];
     //to check if I am able to download Json object and the class is able to parse well and return the data or not.
     XCTAssertTrue(data!=nil);
-    XCTAssertTrue([object fetchJsonData]!= nil);
     
 }
 
