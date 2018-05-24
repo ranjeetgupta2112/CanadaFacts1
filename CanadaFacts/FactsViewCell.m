@@ -45,6 +45,7 @@
         // creating the UIImage programatically and adding to conatiner view
         self.imageFact = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"default.png"]];
         [self.imageFact setTranslatesAutoresizingMaskIntoConstraints:NO];
+        self.imageFact.backgroundColor = UIColor.darkGrayColor;
         [self.contentView addSubview:self.imageFact];
         
         //setting up layout constrains to fit the title, description and image into the cell
