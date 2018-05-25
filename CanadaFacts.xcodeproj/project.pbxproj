@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0433E7E020B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433E7DF20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.m */; };
 		0434FCCC20B1C8C8008498CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434FCCB20B1C8C8008498CF /* AppDelegate.m */; };
 		0434FCD420B1C8FD008498CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD320B1C8FD008498CF /* Assets.xcassets */; };
 		0434FCD720B1C8FD008498CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434FCD520B1C8FD008498CF /* LaunchScreen.storyboard */; };
@@ -93,8 +92,6 @@
 
 /* Begin PBXFileReference section */
 		0433E7DD20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaFactsNetworkMethodCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0433E7DF20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaFactsNetworkMethodCallTests.m; sourceTree = "<group>"; };
-		0433E7E120B6E5A600ECBD14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0434FCC720B1C8C7008498CF /* CanadaFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434FCCA20B1C8C8008498CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0434FCCB20B1C8C8008498CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -208,15 +205,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0433E7DE20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests */ = {
-			isa = PBXGroup;
-			children = (
-				0433E7DF20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.m */,
-				0433E7E120B6E5A600ECBD14 /* Info.plist */,
-			);
-			path = CanadaFactsNetworkMethodCallTests;
-			sourceTree = "<group>";
-		};
 		0434FCBE20B1C8C4008498CF = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +213,6 @@
 				04ACEEB120B5443900DA0488 /* CanadaFactsPerformanceTests */,
 				04ACEEBF20B544E300DA0488 /* CanadaFactsCellTest */,
 				04EC9EAA20B5A88B008810FB /* CanadaFactsInternetRechability */,
-				0433E7DE20B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests */,
 				04C1468020B7E0E400ED01D6 /* CanadaFactsTestsNetworkMethodCAll */,
 				0434FCC820B1C8C7008498CF /* Products */,
 				04EC9EB320B5A97D008810FB /* Frameworks */,
@@ -664,7 +651,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0433E7E020B6E5A600ECBD14 /* CanadaFactsNetworkMethodCallTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
