@@ -1,16 +1,19 @@
-
-//  Created by Amal Rajan on 24/05/18.
+//
+//  CanadaFactsTestsNetworkMethodCAll.m
+//  CanadaFactsTestsNetworkMethodCAll
+//
+//  Created by Amal Rajan on 25/05/18.
 //  Copyright © 2018 RanjeetHO. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "FactsJsonObject.h"
 
-@interface CanadaFactsNetworkMethodCallTests : XCTestCase
+@interface CanadaFactsTestsNetworkMethodCAll : XCTestCase
 
 @end
 
-@implementation CanadaFactsNetworkMethodCallTests
+@implementation CanadaFactsTestsNetworkMethodCAll
 
 - (void)setUp {
     [super setUp];
@@ -20,7 +23,7 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
-}
+}  
 
 - (void)testNetworkCallToFetchData{
     FactsJsonObject *facts = [[FactsJsonObject alloc]init];
@@ -32,4 +35,3 @@
 }
 
 @end
-
